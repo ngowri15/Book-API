@@ -1,0 +1,9 @@
+Project Lombok
+**************
+Project Lombok is a Java library tool that replaces boilerplate code with easy-to-use annotations.
+1)@NoArgsConstructor - To generate the default constructor that takes no arguments
+2)@AllArgsConstructor - To generate a constructor with arguments for all the fields
+3)@Getter - To generate getters for private fields
+4)@Setter - To generate setters for private fields
+5)@Builder - It produces complex builder APIs for your class
+5)@Data - It combines the features of @ToString, @EqualsAndHashCode, @Getter @Setter and @RequiredArgsConstructor
