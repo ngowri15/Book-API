@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "058bc57b-1f21-4768-8173-24f8d7ba5672",
+		"name": "Book-API (Spring Boot)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26636542"
+	},
+	"item": [
+		{
+			"name": "Create A Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"isbnId\": 101,\n        \"bookName\": \"The Tale of Peter Rabbit\",\n        \"authorName\": \"Beatrix Potter\",\n        \"publicationName\": \"Warne\",\n        \"yearPublished\": \"2002\"\n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8585/CreateBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"CreateBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read A Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/ReadBook/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"ReadBook",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update A Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"bookName\": \"Tale of Benjamin  Rabbit\",\n        \"authorName\": \"Beatrix Potter\",\n        \"publicationName\": \"Warne\",\n        \"yearPublished\": \"2002\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8585/UpdateBook/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"UpdateBook",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8585/DeleteBook/101",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"DeleteBook",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create All Books (Batching)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/BatchBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"BatchBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/ReadAllBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"ReadAllBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All Books",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/DeleteAllBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"DeleteAllBooks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

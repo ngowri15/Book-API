@@ -99,3 +99,6 @@ Below are the endpoints to test the Book-API
 | `http://localhost:8585/ReadAllBooks`   | GET    | `Content-Type: text/plain` | Read all the Books' Details   |
 | `http://localhost:8585/DeleteAllBooks` | DELETE | `Content-Type: text/plain` | Delete all the Books' Details |
 
+
+
+
