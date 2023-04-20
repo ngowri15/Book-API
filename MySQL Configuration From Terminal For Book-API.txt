@@ -1,3 +1,5 @@
+/** Also use MySQLWorkbench for configuring database for Book-API **/
+
 To connect MySQL
 ----------------
 
@@ -61,6 +63,9 @@ Restart MySQL 
 -------------
 
 sudo /usr/local/mysql/support-files/mysql.server restart 
+
+
+
 
 
 
