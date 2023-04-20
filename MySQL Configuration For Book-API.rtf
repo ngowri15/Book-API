@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AndaleMono;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red255\green255\blue255;
+\red36\green36\blue36;\red24\green41\blue81;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c100000\c100000\c99985\c0;
+\cssrgb\c18865\c18865\c18818;\cssrgb\c12407\c21862\c39086;\cssrgb\c0\c0\c0\c84706;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \ul \ulc0 To connect MySQL\ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+\
+1. Type the following command\kerning1\expnd0\expndtw0 \ul \
+\ulnone \
+\expnd0\expndtw0\kerning0
+   /usr/local/mysql/bin/mysql -u root -p\
+\
+2. Enter password as \'93password\'94\
+\
+3. You are now connected to MySQL\
+\
+\ul To check the port number of mysql server\
+\
+\ulnone SHOW GLOBAL VARIABLES LIKE 'PORT';\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \ul To create a Database\
+\
+\ulnone create database test;\
+\ul \
+To create a Table\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf2 \cb3 \ulnone \CocoaLigature0 create table `test`.`book_details` (   `ISBN_ID` INT NOT NULL,   `BOOK_NAME` VARCHAR(45) NULL,   `AUTHOR_NAME` VARCHAR(45) NULL,   `PUBLICATION_NAME` ARCHER(45) NULL,   `YEAR_PUBLISHED` INT NULL,   PRIMARY KEY (`ISBN_ID`));
+\fs32 \cf0 \cb1 \ul \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+To set the database\
+\
+\ulnone use test;\
+\
+\ul To select all data from  a table\ulnone \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \cb3 \CocoaLigature0 select * from book_details;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs32 \cf0 \cb1 \ul \ulc2 \CocoaLigature1 To insert data into a table\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \cb4 \ulnone \CocoaLigature0 insert into \
+book_details(isbn_id,book_name,author_name,publication_name,year_published) \
+values('101','You Can Win', 'Shiv Khera','Bloomsbury', '2018');
+\fs32 \cb1 \ul \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ulc0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ulc2 To delete a record/row from a table\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ulc0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \cb3 \ulnone \CocoaLigature0 delete from book_details where isbn_id='102'\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs34\fsmilli17333 \cf5 \expnd0\expndtw0\kerning0
+\ul \ulc5 \CocoaLigature1 \outl0\strokewidth0 \strokec5 Start MySQL\cf5 \ulnone \strokec5 \'a0
+\fs24 \cf6 \strokec6 \
+
+\fs32 \cf5 \strokec5 sudo\'a0/usr/local/mysql/support-files/mysql.server\'a0start\'a0\
+
+\fs24 \cf7 \strokec7 \
+
+\fs34\fsmilli17333 \cf5 \ul \ulc5 \strokec5 Stop MySQL\cf5 \ulnone \strokec5 \'a0
+\fs24 \cf6 \strokec6 \
+
+\fs32 \cf5 \strokec5 sudo\'a0/usr/local/mysql/support-files/mysql.server\'a0stop\'a0\
+
+\fs24 \cf7 \strokec7 \
+
+\fs34\fsmilli17333 \cf5 \ul \ulc5 \strokec5 Restart MySQL\cf5 \ulnone \strokec5 \'a0
+\fs24 \cf6 \strokec6 \
+
+\fs32 \cf5 \strokec5 sudo\'a0/usr/local/mysql/support-files/mysql.server\'a0restart\'a0
+\f1\fs24 \cf7 \cb8 \strokec7 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \cb1 \kerning1\expnd0\expndtw0 \ul \ulc0 \outl0\strokewidth0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \ulc2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs28 \cf0 \cb3 \ulnone \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+}
