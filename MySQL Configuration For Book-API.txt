@@ -1,0 +1,67 @@
+To connect MySQL
+----------------
+
+1. Type the following command
+
+   /usr/local/mysql/bin/mysql -u root -p
+
+2. Enter password as “password”
+
+3. You are now connected to MySQL
+
+To check the port number of mysql server
+----------------------------------------
+
+SHOW GLOBAL VARIABLES LIKE 'PORT';
+
+To create a Database
+--------------------
+
+create database test;
+
+To create a Table
+-----------------
+
+create table `test`.`book_details` (   `ISBN_ID` INT NOT NULL,   `BOOK_NAME` VARCHAR(45) NULL,   `AUTHOR_NAME` VARCHAR(45) NULL,   `PUBLICATION_NAME` ARCHER(45) NULL,   `YEAR_PUBLISHED` INT NULL,   PRIMARY KEY (`ISBN_ID`));
+
+To set the database
+-------------------
+
+use test;
+
+To select all data from  a table
+--------------------------------
+
+select * from book_details;
+
+To insert data into a table
+---------------------------
+
+insert into 
+book_details(isbn_id,book_name,author_name,publication_name,year_published) 
+values('100','You Can Win', 'Shiv Khera','Bloomsbury', '2018');
+
+To delete a record/row from a table
+-----------------------------------
+
+delete from book_details where isbn_id='102'
+
+
+Start MySQL 
+-----------
+
+sudo /usr/local/mysql/support-files/mysql.server start 
+
+Stop MySQL 
+----------
+
+sudo /usr/local/mysql/support-files/mysql.server stop 
+
+Restart MySQL 
+-------------
+
+sudo /usr/local/mysql/support-files/mysql.server restart 
+
+
+
+

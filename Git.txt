@@ -1,23 +1,27 @@
 To Add A Project To GitHub/Bitbucket Repository From Terminal (Mac)
+-------------------------------------------------------------------
 
-Create a new repository for the app in GitHub or Bitbucket or any other VCS
-Open terminal and navigate to the app's root folder (Example: Book-API)
-Input the following commands
+1)Create a new repository for the app in GitHub or Bitbucket or any other VCS
 
-git init
-git add .
-git commit -m "initial commit"
+2)Open terminal and navigate to the app's root folder (Example: Book-API)
 
-git init will create a .git hidden folder inside app's root folder. To view this hidden folder in mac press shift + command + .(period)
-Push the application to the new repository by executing the following commands in the terminal.
+3)Input the following commands
 
-git remote add origin git@github.com:username/reponame.git(copy SSH URL from VCS Repository)
-Example: git remote add origin git@bitbucket.org:gowri-java-projects/book-api.git
-git branch -M "commit changes"
-git push origin main
-Enter passphrase
+	git init
+	git add .
+	git commit -m "initial commit"
 
-If remote origin already exists, then type the following command and push the application with the above commands
+4)git init will create a .git hidden folder inside app's root folder. To view this hidden folder in mac press shift + command + .(period)
 
-git remote remove origin
+5)Push the application to the new repository by executing the following commands in the terminal.
+
+	git remote add origin git@github.com:username/reponame.git(copy SSH URL from VCS Repository)
+	Example: git remote add origin git@bitbucket.org:gowri-java-projects/book-api.git
+	git branch -M "commit changes"
+	git push origin main
+	Enter passphrase
+
+6)If remote origin already exists, then type the following command and push the application with the above commands
+
+	git remote remove origin
 
