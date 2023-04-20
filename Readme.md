@@ -1,5 +1,5 @@
 # Book-API
-This is a Spring Boot REST API for Book to achieve the CRUD operations using MySQL DB.
+This is a Spring Boot REST API for Book to achieve the CRUD and Batching operations using MySQL DB.
 
 ## Tools Used
 * 	[JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java™ Platform, Standard Edition Development Kit 
@@ -77,7 +77,7 @@ CREATE TABLE `test`.`BOOK_DETAILS` (
 ```
 - MySQL configuration in application.properties
 ```
-server.port = 8585
+server.port=8585
 spring.datasource.url=jdbc:mysql://localhost:3306/test
 spring.datasource.username=root
 spring.datasource.password=password
