@@ -49,20 +49,20 @@ To delete a record/row from a table
 delete from book_details where isbn_id='102'
 
 
-Start MySQL 
+Start MySQL
 -----------
 
-sudo /usr/local/mysql/support-files/mysql.server start 
+sudo /usr/local/mysql/support-files/mysql.server start
 
-Stop MySQL 
+Stop MySQL
 ----------
 
-sudo /usr/local/mysql/support-files/mysql.server stop 
+sudo /usr/local/mysql/support-files/mysql.server stop
 
-Restart MySQL 
+Restart MySQL
 -------------
 
-sudo /usr/local/mysql/support-files/mysql.server restart 
+sudo /usr/local/mysql/support-files/mysql.server restart
 
 
 
