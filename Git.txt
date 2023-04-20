@@ -1,4 +1,4 @@
-To Add A Project To GitHub/Bitbucket Repository From Terminal (Mac)
+To Add A Project To GitHub/Bitbucket/Any Other VCS Repository From Terminal (Mac)
 -------------------------------------------------------------------
 
 1)Create a new repository for the app in GitHub or Bitbucket or any other VCS
@@ -24,4 +24,14 @@ To Add A Project To GitHub/Bitbucket Repository From Terminal (Mac)
 6)If remote origin already exists, then type the following command and push the application with the above commands
 
 	git remote remove origin
+
+To Commit Changes Made In A Project To GitHub/Bitbucket/Any Other VCS Repository From Terminal (Mac)
+----------------------------------------------------------------------------------------------------
+
+1)Input the following commands
+
+	git add .
+	git commit -m "commit changes"
+	git push origin main
+	Enter passphrase
 
