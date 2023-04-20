@@ -13,8 +13,8 @@ Push the application to the new repository by executing the following commands i
 
 git remote add origin git@github.com:username/reponame.git(copy SSH URL from VCS Repository)
 Example: git remote add origin git@bitbucket.org:gowri-java-projects/book-api.git
-git branch -M main
-git push -f origin main
+git branch -M "commit changes"
+git push origin main
 Enter passphrase
 
 If remote origin already exists, then type the following command and push the application with the above commands
