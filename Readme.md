@@ -8,6 +8,7 @@ This is a Spring Boot REST API for Book to achieve the CRUD and Batching operati
 * 	[Maven](https://maven.apache.org/) - Tool to build and manage projects
 * 	[MySQL](https://downloads.mysql.com/archives/community) - Relational Database Management System(RDBMS)
 * 	[Postman](https://www.getpostman.com/) - API testing tool
+* 	[MySQLWorkbench](https://dev.mysql.com/downloads/) - Visual Database Design Tool
 
 ## Packages
 ### main
